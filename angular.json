@@ -30,7 +30,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js-files/runtime.js",
+              "src/assets/js-files/polyfills.js",
+              "src/assets/js-files/main.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,6 +104,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
